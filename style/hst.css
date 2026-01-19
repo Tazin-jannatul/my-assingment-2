@@ -1,0 +1,73 @@
+.host-section {
+    background-color: #0b0e1f;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.host-card {
+    background-color: #161b33; /* কার্ডের হালকা নীল রঙ */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+/* ছবি গোল করার ট্রিক */
+.host-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* একদম গোল করবে */
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.host-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.host-info p {
+    color: #b0b3b8;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* আইকনগুলো সাজানো */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0.8);
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
+}
+/* 
+/* মোবাইল রেসপনসিভ */
+@media (max-width: 768px) {
+    .host-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+} */
