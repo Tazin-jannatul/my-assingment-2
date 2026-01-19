@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image:url('../images/hero-bg.png');
+    color: white;
+    min-height:100vh;
+}
+.conteinar{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo span {
+    color: #b06ab3;
+}
+.links{
+  display: flex;  
+  list-style: none;
+  gap: 30px;
+}
+.btn{
+    background: linear-gradient( #ff8a00, #da1b60);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+.hero{
+    display: grid;
+    place-content: center;
+    align-items: center;
+}
+.hero-image{
+    display: grid;
+    place-items: center;
+    /* margin-bottom: 20px; */
+    position: relative;
+    /* grid-column: 1; */
+    /* grid-row: 1; */
+}
+/* .circle , .mic{ */
+  /* grid-area: 1/1;   */
+
+.circle{
+    width: 250px;
+    height: auto;
+    padding: 10px;
+  
+}
+.mic{
+    position: absolute; 
+    align-items: center;
+    display: grid;
+    justify-content: center;
+     /* width: 200px;
+    height: 20opx; */
+    z-index: 2;  
+       /* margin-bottom: 50px;  */
+     margin-left: 60px; 
+     top: 50%; 
+     left:50%;
+     transform: translate(-50%,-50%);
+    
+}
+.badge{
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: #4caf50;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.h1{display: grid;
+    justify-content: center;
+    align-items: center;
+ font-size: 3em;   
+ margin-top: 20px;
+ }
+ .para{
+display: grid;
+justify-content: center;
+align-items: center;
+    color: white;
+    margin-top: 10px;
+ }
+ .button{
+
+    display: flex;
+    justify-content: center;
+    gap: 15PX;
+    margin-top: 25px;
+ }
+ .spotify{
+ background: linear-gradient( #ff8a00, #da1b60);
+ border: none;
+ padding: 10px 20px;
+ border-radius: 25px;
+ color: whitesmoke;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ font-weight: bold;
+ cursor: pointer;
+ }
+ .subscribe{
+background: transparent;border: 2px solid #4caf50;
+padding: 10px 20px;
+border-radius: 25px;
+color: #4caf50;
+display: flex;
+align-items: center;
+gap: 8px;
+cursor: pointer;
+font-weight: bold;
+ }
+ .button img{
+    width: 20px;
+ }
