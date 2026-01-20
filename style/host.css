@@ -30,7 +30,10 @@ body {
 
 .video-box {
     /* height: 80%; */
-    width: 50%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
     /* aspect-ratio: 16/9; */
 }
 
@@ -40,13 +43,27 @@ video {
     display: block;
 }
 
+.card{
+    background-color: #1c223d;
+    width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: trannsform 0.3s
+
+}
+.card:hover{
+    transform: translateY(-10px);
+}
 .card-body {
     padding: 25px;
+    text-align: left;
 }
 
 .card-body h3 {
     margin: 0 0 10px 0;
     font-size: 1.2rem;
+    color: white;
 }
 
 .card-body p {

@@ -5,11 +5,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-image:url('../images/hero-bg.png');
+    /* background-image:url('../images/hero-bg.png');
     color: white;
-    min-height:100vh;
+    min-height:100vh; */
 }
 .conteinar{
+       background-image:url('../images/hero-bg.png');
+    color: white;
+    min-height:100vh;
     display: grid;
     grid-template-rows: auto 1fr;
     height: 100%;
@@ -57,6 +60,7 @@ body{
   /* grid-area: 1/1;   */
 
 .circle{
+    position: relative;
     width: 250px;
     height: auto;
     padding: 10px;
@@ -78,14 +82,16 @@ body{
     
 }
 .badge{
-
+/* position: relative; */
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 5%;
+    left:15%;
+    transform: translateX(-50%);
     background: #4caf50;
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 10px;
+    z-index: 10;
 }
 .h1{display: grid;
     justify-content: center;

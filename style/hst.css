@@ -11,7 +11,7 @@
 }
 
 .host-card {
-    background-color: #161b33; /* কার্ডের হালকা নীল রঙ */
+    background-color: #161b33; 
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
@@ -22,11 +22,11 @@
     text-align: left;
 }
 
-/* ছবি গোল করার ট্রিক */
+
 .host-image img {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* একদম গোল করবে */
+    border-radius: 50%; 
     object-fit: cover;
     border: 2px solid #333;
 }
@@ -43,7 +43,7 @@
     font-size: 0.95rem;
 }
 
-/* আইকনগুলো সাজানো */
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -62,7 +62,11 @@
 }
 /* 
 /* মোবাইল রেসপনসিভ */
-@media (max-width: 768px) {
+@media screen  and (max-width:576px) and (min-width:992px){
+    .host-section{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+
     .host-card {
         flex-direction: column;
         text-align: center;
@@ -70,4 +74,4 @@
     .social-icons {
         justify-content: center;
     }
-} */
+} 
